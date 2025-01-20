@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Campus Crush App</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Patrick+Hand&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        body{
+            font-family: "Patrick Hand";
+            overflow-x: hidden;
+            background-image: url(./images/whiteBg.jpg);
+        }
+        .bold-text{
+            font-weight: bold;
+        }
+        span{
+            color: #f06292;
+        }
+        p{
+            color: gray;
+            font-size: 1.5rem;
+        }
+        .input-field input:focus{
+            border-bottom: 1px solid #f06292 !important;
+            box-shadow: 0 1px 0 0 #f06292 !important;
+        }
+        .input-field .prefix.active, label.active{
+            color: #f06292 !important;
+        }
+        .carousel .indicators .indicator-item {
+            background-color: #f06292;
+        }
+        .carousel .indicators .indicator-item.active {
+            background-color: pink;
+        }
+        [type="checkbox"]:checked+span:not(.lever):before {
+            border-right: 1px solid #f06292 !important;
+            border-bottom: 1px solid #f06292 !important;
+        }
+        .curved{
+            border-radius: 30px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="slider">
+            <ul class="slides">
+                <li style="background-image: url(./images/whiteBg.jpg);">
+                    <div class="container center">
+                        <div class="row">
+                            <div class="col s12 center">
+                                <img src="./images/logo.png" style="max-width: 300px;">
+                                <h1 class="bold-text" style="margin-top: -100px;"><span class="pink-text text-lighten-2">Campus</span> Crush</h1>
+                                <p style="margin-top: -20px;">Sign up with campus crush</p>
+                                <form action="">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col s12 l6 input-field">
+                                                <label for="password">Enter your <span class="bold-text pink-text text-lighten-2">Password</span></label>
+                                                <input required type="password" id="password" >
+                                            </div>
+                                            <div class="col s12 l6 input-field">
+                                                <label for="c-password">Re-Enter your <span class="bold-text pink-text text-lighten-2">Password</span></label>
+                                                <input required type="password" id="c-password" >
+                                            </div>
+                                            <div class="container">
+                                                <div class="col s12 input-field">
+                                                    <!-- <button class="btn btn-large pink lighten-2 waves" style="width: 100%;">Log In</button> -->
+                                                </div>
+                                                <p>already have an account? <a href="./login.html" class="pink-text text-lighten-2">Sign In</a></p>
+                                            </div>
+                                        </div> 
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li style="background-image: url(./images/whiteBg.jpg);">
+                    <div class="container center">
+                        <div class="row">
+                            <div class="col s12">
+                                <img src="./images/logo.png" style="max-width: 300px;">
+                                <h1 class="bold-text" style="margin-top: -100px;">I'm here <span>For</span>?</h1>
+                                <p style="margin-top: -20px;">Tell us what your looking for, so we can assist you further</p>
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col s6">
+                                            <label for="friendship"><img src="./images/looking_for_friendship.jpeg" style="height: 200px;" class="curved"></label>
+                                            <input type="radio">
+                                        </div>
+                                        <div class="col s6">
+                                            <label for="friendship"><img src="./images/looking_for_relationship.jpeg" style="height: 200px;" class="curved"></label>
+                                            <input type="radio">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li style="background-image: url(./images/whiteBg.jpg);">
+                    <div class="container center">
+                        <div class="row">
+                            <div class="col s12">
+                                <img src="./images/logo.png" style="max-width: 300px;">
+                                <h1 class="bold-text" style="margin-top: -100px;">What's Your <span>Gender</span>?</h1>
+                                <p style="margin-top: -20px;">Tell us so we can find priorities for you</p>
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col s6">
+                                            <label for=""><img src="./images/male.jpeg" style="height: 200px;" class="curved"></label>
+                                            <input type="radio">
+                                        </div>
+                                        <div class="col s6">
+                                            <label for=""><img src="./images/female.jpeg" style="height: 200px;" class="curved"></label>
+                                            <input type="radio">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li style="background-image: url(./images/whiteBg.jpg);">
+                    <div class="container center">
+                        <div class="row">
+                            <div class="col s12">
+                                <img src="./images/logo.png" style="max-width: 300px;">
+                                <h1 class="bold-text" style="margin-top: -100px;">Your <span>Details</span></h1>
+                                <p style="margin-top: -20px;">What do you want to be called, how do we reach you</p>
+                                <div class="container">
+                                    <form action="">
+                                        <div class="row">
+                                            <div class="col s12 l6 input-field">
+                                                <label for="username">Create a <span>personalised</span> Name</label>
+                                                <input type="text" id="username">
+                                            </div>
+                                            <div class="col s12 l6 input-field">
+                                                <label for="contact">Enter your <span id="contact" class="pink-text text-lighten-2"></span></label>
+                                                <input type="text" id="contact">
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </main>
+    <script src="./js/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.slider').slider({
+                height: 600,
+                interval: 40000,
+            });
+        });
+    </script>
+    <script>
+        var authentication = new Typed('#auth', {
+            strings: ["E-Mail", "Username", "Phone Number", "..."],
+            typeSpeed : 100,
+            backSpeed : 50,
+            backDelay : 2000,
+            loop : true,
+        });
+      </script>
+      <script>
+        var contact = new Typed('#contact', {
+            strings: ["E-Mail", "Phone Number"],
+            typeSpeed : 100,
+            backSpeed : 50,
+            backDelay : 2000,
+            loop : true,
+        });
+      </script>
+</body>
+</html>
