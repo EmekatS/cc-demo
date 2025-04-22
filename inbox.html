@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Campus Crush App</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Patrick+Hand&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        body{
+            font-family: "Patrick Hand";
+            overflow: hidden;
+            background-image: url(./images/whiteBg.jpg);
+        }
+        .bold-text{
+            font-weight: bold;
+        }
+        p{
+            color: gray;
+            font-size: 1.5rem;
+        }
+        .input-field input:focus{
+            border-bottom: 1px solid #f06292 !important;
+            box-shadow: 0 1px 0 0 #f06292 !important;
+        }
+        .input-field .prefix.active, label.active{
+            color: #f06292 !important;
+        }
+        .nav-links{
+            margin-top: 20px;
+            transition: all .4s;
+            border-radius: 50%;
+        }
+        .nav-links:hover{
+            transform: translateY(-40px);
+            background-color: #f06292;
+            height: 100px;
+        }
+        .curved{
+            border-radius: 20px;
+        }
+        span{
+            color: #f06292;
+            font-weight: bold;
+        }
+        ::-webkit-scrollbar{
+            width: 12px;
+            background: transparent;
+        }
+        ::-webkit-scrollbar-thumb{
+            background: linear-gradient(transparent, #f06292);
+            border-radius: 10px;
+            height: 120px;
+            transition: all .5s;
+        }
+        ::-webkit-scrollbar-thumb:hover{
+            background: linear-gradient(transparent, #ba68c8);
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="navbar-fixed">
+            <nav class="z-depth-0" style="height: 100px; background: transparent;">
+                <div class="container center">
+                    <a href="./index.html" class="brand-logo hide-on-med-and-down"><img src="./images/logo.png" alt="" style="max-width: 200px; margin-top: -55px; margin-left: -90px;"></a>
+                    <a href="./index.html" class="brand-logo hide-on-large-only"><img src="./images/logo.png" alt="" style="max-width: 200px; margin-top: -55px;"></a>
+                </div>
+            </nav>
+        </div>
+        <section style="height: calc(100vh - 130px);">
+            <div class="container hide-on-large-only">
+                <div class="container white-text">
+                    <div class="row">
+                        <div class="col s12 pink lighten-2" style="padding: 15px; margin-bottom: 10px; border-radius: 25px; margin-top: 10px; display: flex; justify-content: space-between;">
+                            <h4 class="bold-text"><a href="#" class="white-text"><i cla1ss="material-icons">arrow_back</i></a> Chats</h4>
+                            <h4><i class="material-icons">search</i></h4>
+                        </div>
+                            <div>
+                                <h5 class="bold-text" style="margin-bottom: -20px;">Thereasa🍑</h4>
+                                <p class="white-text">Heyy Jae, drop the addy</p>
+                            </div>
+                            <h5>5:45</h5>
+                        </div>
+                        <div class="col s12 pink lighten-2" style="padding: 15px; border-radius: 25px; margin-top: 10px; display: flex; justify-content: space-between;">
+                            <div>
+                                <h5 class="bold-text" style="margin-bottom: -20px;">Daniel📌</h4>
+                                <p class="white-text">Wassgood bro, down to hit the gym??</p>
+                            </div>
+                            <h5>15:31</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="container hide-on-med-and-down"> -->
+                <div class="row hide-on-med-and-down">
+                    <div class="col s4" style="overflow-y: scroll; height: 600px; border-right: 1px solid #e0e0e0;">
+                        <div class="chat-list">
+                            <ul class="collection">
+                                <form action="">
+                                    <div class="container">
+                                        <div class="row">
+                                            <h3 class="bold-text" style="margin-bottom: -10px;">Chat</h3>
+                                            <div class="col s12 input-field">
+                                                <label for="search">Search</label>
+                                                <input type="text" id="search" style="margin-bottom: -10px;">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                                <li class="collection-item avatar" style="background-color: transparent;">
+                                  <img src="images/interview1.jpeg" alt="" class="circle">
+                                  <span class="title">Fortune</span>
+                                  <p>Hwfr
+                                  </p>
+                                  <a href="#!" class="secondary-content pink-text text-lighten-2">12:12</a>
+                                </li>
+                                <li class="collection-item avatar" style="background-color: transparent;">
+                                    <img src="images/interview2.jpeg" alt="" class="circle">
+                                  <span class="title">Tehilla</span>
+                                  <p>Would u rather....
+                                  </p>
+                                  <a href="#!" class="secondary-content pink-text text-lighten-2">13:12</a>
+                                </li>
+                                <li class="collection-item avatar" style="background-color: transparent;">
+                                    <img src="images/interview3.jpeg" alt="" class="circle">
+                                  <span class="title">Jemimah</span>
+                                  <p>Did u sign att...
+                                  </p>
+                                  <a href="#!" class="secondary-content pink-text text-lighten-2">01:34</a>
+                                </li>
+                                <li class="collection-item avatar" style="background-color: transparent;">
+                                    <img src="images/interview4.jpeg" alt="" class="circle">
+                                  <span class="title">Ubermensch</span>
+                                  <p>i can just get th...
+                                  </p>
+                                  <a href="#!" class="secondary-content pink-text text-lighten-2">03:54</a>
+                                </li>
+                                <li class="collection-item avatar" style="background-color: transparent;">
+                                    <img src="images/interview4.jpeg" alt="" class="circle">
+                                  <span class="title">Ubermensch</span>
+                                  <p>i can just get th...
+                                  </p>
+                                  <a href="#!" class="secondary-content pink-text text-lighten-2">03:54</a>
+                                </li>
+                                <li class="collection-item avatar" style="background-color: transparent;">
+                                    <img src="images/interview4.jpeg" alt="" class="circle">
+                                  <span class="title">Ubermensch</span>
+                                  <p>i can just get th...
+                                  </p>
+                                  <a href="#!" class="secondary-content pink-text text-lighten-2">03:54</a>
+                                </li>
+                                <li class="collection-item avatar" style="background-color: transparent;">
+                                    <img src="images/interview4.jpeg" alt="" class="circle">
+                                  <span class="title">Ubermensch</span>
+                                  <p>i can just get th...
+                                  </p>
+                                  <a href="#!" class="secondary-content pink-text text-lighten-2">03:54</a>
+                                </li>
+                                <li class="collection-item avatar" style="background-color: transparent;">
+                                    <img src="images/interview4.jpeg" alt="" class="circle">
+                                  <span class="title">Ubermensch</span>
+                                  <p>i can just get th...
+                                  </p>
+                                  <a href="#!" class="secondary-content pink-text text-lighten-2">03:54</a>
+                                </li>
+                                <li class="collection-item avatar" style="background-color: transparent;">
+                                    <img src="images/interview4.jpeg" alt="" class="circle">
+                                  <span class="title">Ubermensch</span>
+                                  <p>i can just get th...
+                                  </p>
+                                  <a href="#!" class="secondary-content pink-text text-lighten-2">03:54</a>
+                                </li>
+                                <li class="collection-item avatar" style="background-color: transparent;">
+                                    <img src="images/interview4.jpeg" alt="" class="circle">
+                                  <span class="title">Ubermensch</span>
+                                  <p>i can just get th...
+                                  </p>
+                                  <a href="#!" class="secondary-content pink-text text-lighten-2">03:54</a>
+                                </li>
+                                <li class="collection-item avatar" style="background-color: transparent;">
+                                    <img src="images/interview4.jpeg" alt="" class="circle">
+                                  <span class="title">Ubermensch</span>
+                                  <p>i can just get th...
+                                  </p>
+                                  <a href="#!" class="secondary-content pink-text text-lighten-2">03:54</a>
+                                </li>
+                                <li class="collection-item avatar" style="background-color: transparent;">
+                                    <img src="images/interview4.jpeg" alt="" class="circle">
+                                  <span class="title">Ubermensch</span>
+                                  <p>i can just get th...
+                                  </p>
+                                  <a href="#!" class="secondary-content pink-text text-lighten-2">03:54</a>
+                                </li>
+                                <li class="collection-item avatar" style="background-color: transparent;">
+                                    <img src="images/interview4.jpeg" alt="" class="circle">
+                                  <span class="title">Ubermensch</span>
+                                  <p>i can just get th...
+                                  </p>
+                                  <a href="#!" class="secondary-content pink-text text-lighten-2">03:54</a>
+                                </li>
+                                <li class="collection-item avatar" style="background-color: transparent;">
+                                    <img src="images/interview4.jpeg" alt="" class="circle">
+                                  <span class="title">Ubermensch</span>
+                                  <p>i can just get th...
+                                  </p>
+                                  <a href="#!" class="secondary-content pink-text text-lighten-2">03:54</a>
+                                </li>
+                                <li class="collection-item avatar" style="background-color: transparent;">
+                                    <img src="images/interview4.jpeg" alt="" class="circle">
+                                  <span class="title">Ubermensch</span>
+                                  <p>i can just get th...
+                                  </p>
+                                  <a href="#!" class="secondary-content pink-text text-lighten-2">03:54</a>
+                                </li>
+                                <li class="collection-item avatar" style="background-color: transparent;">
+                                    <img src="images/interview4.jpeg" alt="" class="circle">
+                                  <span class="title">Ubermensch</span>
+                                  <p>i can just get th...
+                                  </p>
+                                  <a href="#!" class="secondary-content pink-text text-lighten-2">03:54</a>
+                                </li>
+                                <li class="collection-item avatar" style="background-color: transparent;">
+                                    <img src="images/interview4.jpeg" alt="" class="circle">
+                                  <span class="title">Ubermensch</span>
+                                  <p>i can just get th...
+                                  </p>
+                                  <a href="#!" class="secondary-content pink-text text-lighten-2">03:54</a>
+                                </li>
+                                <li class="collection-item avatar" style="background-color: transparent;">
+                                    <img src="images/interview4.jpeg" alt="" class="circle">
+                                  <span class="title">Ubermensch</span>
+                                  <p>i can just get th...
+                                  </p>
+                                  <a href="#!" class="secondary-content pink-text text-lighten-2">03:54</a>
+                                </li>
+                                <li class="collection-item avatar" style="background-color: transparent;">
+                                    <img src="images/interview4.jpeg" alt="" class="circle">
+                                  <span class="title">Ubermensch</span>
+                                  <p>i can just get th...
+                                  </p>
+                                  <a href="#!" class="secondary-content pink-text text-lighten-2">03:54</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col s8" style="margin-left: -11px;">
+                        <div class="title-box" style="border: 1px solid #e0e0e0; padding: 0px 10px; display: flex; justify-content: space-between; align-items: center; height: 80px;">
+                            <h4 class="pink-text text-lighten-2 bold-text" style="position: relative; bottom: -15px;"><img src="./images/interview1.jpeg" class="circle" style="width: 40px; position: relative; bottom: -5px;"> <span style="position: relative; top: -20px;">Fortune</span>
+                            <p style="margin: 0%; position: relative; right: -50px; top: -25px; font-weight: 100;">Online</p></h4>
+                        </div>
+                        <div class="chat-box" style="width: 100%; background-color: transparent; border: 1px solid #e0e0e0; height: 450px; display: flex; justify-content: space-between; overflow: scroll;">
+                            <div style="width: 100%; padding: 30px;">
+                                <div class="right-box">
+                                    <h5><h5 style="text-decoration: underline #f06292; text-align: right;">What time we leaving</h5>
+                                    <p style="font-size: 1rem; margin-top: -3px; text-align: right;">13:23✔✔</p>
+                                    </h5>
+                                </div>
+                                <div class="left-box">
+                                    <h5><h5 style="text-decoration: underline #f06292; text-align: left; max-width: 300px;">I dunno mehn prolly whe AD get here</h5>
+                                    <p style="font-size: 1rem; margin-top: -3px; text-align: left;">13:23✔✔</p>
+                                    </h5>
+                                </div>
+                                <div class="right-box">
+                                    <h5><h5 style="text-decoration: underline #f06292; text-align: right;">Man fuck AD</h5>
+                                    <p style="font-size: 1rem; margin-top: -3px; text-align: right;">13:23✔✔</p>
+                                    </h5>
+                                </div><div class="right-box">
+                                    <h5><h5 style="text-decoration: underline #f06292; text-align: right;">He talking to my girll!!</h5>
+                                    <p style="font-size: 1rem; margin-top: -3px; text-align: right;">13:23✔✔</p>
+                                    </h5>
+                                </div><div class="right-box">
+                                    <h5><h5 style="text-decoration: underline #f06292; text-align: right;">i ain't going no more</h5>
+                                    <p style="font-size: 1rem; margin-top: -3px; text-align: right;">13:23✔✔</p>
+                                    </h5>
+                                </div>
+                                <div class="left-box">
+                                    <h5><h5 style="text-decoration: underline #f06292; text-align: left; max-width: 300px;">dont be a pussy mehn</h5>
+                                    <p style="font-size: 1rem; margin-top: -3px; text-align: left;">13:23✔✔</p>
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="type-box" style="width: 100%; background-color: transparent; border: 1px solid #e0e0e0; height: 70px;">
+                            <form action="">
+                                <div class="row">
+                                    <div class="col s11 input-field">
+                                        <label for="send_text">Message...</label>
+                                        <input type="text" id="send_text">
+                                    </div>
+                                    <div class="col s1 input-field">
+                                        <button class="btn btn-large pink lighten-2 white-text btn-floating"><i class="material-icons">done</i></button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- <footer class="pink lighten-2" style="height: 100px;">
+            <div class="container center">
+                <div class="row">
+                    <div class="col s3" style="list-style: none;">
+                        <li class="nav-links"><a href="#" class="white-text"><i class="material-icons">person</i></a></li>
+                    </div>
+                    <div class="col s3" style="list-style: none;">
+                        <li class="nav-links"><a href="#" class="white-text"><i class="material-icons">mail</i></a></li>
+                    </div>
+                    <div class="col s3" style="list-style: none;">
+                        <li class="nav-links"><a href="#" class="white-text"><i class="material-icons">settings</i></a></li>
+                    </div>
+                    <div class="col s3" style="list-style: none;">
+                        <li class="nav-links"><a href="#" class="white-text"><i class="material-icons">home</i></a></li>
+                    </div>
+                </div>
+            </div>
+        </footer> -->
+    </main>
+    <script src="./js/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.slider').slider({
+                height: 600,
+                interval: 400000,
+                indicators: false,
+            });
+            $('.tooltipped').tooltip();
+        });
+    </script>
+    <script>
+        var authentication = new Typed('#auth', {
+            strings: ["E-Mail", "Username", "Phone Number", "..."],
+            typeSpeed : 100,
+            backSpeed : 50,
+            backDelay : 2000,
+            loop : true,
+        });
+      </script>
+</body>
+</html>

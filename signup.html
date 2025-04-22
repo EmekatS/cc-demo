@@ -46,7 +46,7 @@
     </style>
 </head>
 <body>
-    <main>
+    <main style="margin-top: -100px;">
         <div class="slider">
             <ul class="slides">
                 <li style="background-image: url(./images/whiteBg.jpg);">
@@ -63,7 +63,7 @@
                                                 <label for="password">Enter your <span class="bold-text pink-text text-lighten-2">Password</span></label>
                                                 <input required type="password" id="password" >
                                             </div>
-                                            <div class="col s12 l6 input-field">
+                                            <div class="col s1e2 l6 input-field">
                                                 <label for="c-password">Re-Enter your <span class="bold-text pink-text text-lighten-2">Password</span></label>
                                                 <input required type="password" id="c-password" >
                                             </div>
@@ -90,11 +90,12 @@
                                 <div class="container">
                                     <div class="row">
                                         <div class="col s6">
-                                            <label for="friendship"><img src="./images/looking_for_friendship.jpeg" style="height: 200px;" class="curved"></label>
-                                            <input type="radio">
+                                            <label for="friendship"><img src="./images/looking_for_friendship.jpeg" style="height: 200px;" class="curved"><h3 class="bold-text"><span>Friend</span>ship</h3></label>
+                                            <input type="radio" id="friendship">
+
                                         </div>
                                         <div class="col s6">
-                                            <label for="friendship"><img src="./images/looking_for_relationship.jpeg" style="height: 200px;" class="curved"></label>
+                                            <label for="friendship"><img src="./images/looking_for_relationship.jpeg" style="height: 200px;" class="curved"><h3 class="bold-text"><span>Ro</span>mance</h3></label>
                                             <input type="radio">
                                         </div>
                                     </div>
@@ -113,11 +114,11 @@
                                 <div class="container">
                                     <div class="row">
                                         <div class="col s6">
-                                            <label for=""><img src="./images/male.jpeg" style="height: 200px;" class="curved"></label>
+                                            <label for=""><img src="./images/male.png" style="height: 300px;" class="curved"></label>
                                             <input type="radio">
                                         </div>
                                         <div class="col s6">
-                                            <label for=""><img src="./images/female.jpeg" style="height: 200px;" class="curved"></label>
+                                            <label for=""><img src="./images/female.png" style="height: 300px;" class="curved"></label>
                                             <input type="radio">
                                         </div>
                                     </div>
@@ -144,6 +145,28 @@
                                                 <label for="contact">Enter your <span id="contact" class="pink-text text-lighten-2"></span></label>
                                                 <input type="text" id="contact">
                                             </div>
+                                            
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li style="background-image: url(./images/whiteBg.jpg);">
+                    <div class="container center">
+                        <div class="row">
+                            <div class="col s12">
+                                <img src="./images/logo.png" style="max-width: 300px;">
+                                <h1 class="bold-text" style="margin-top: -100px;"><span>Verify</span> Details</h1>
+                                <p style="margin-top: -20px;">Verify your account by entering OTP sent to your E-Mail or Phone number</p>
+                                <div class="container">
+                                    <form action="">
+                                        <div class="row">
+                                            <div class="col s12 input-field">
+                                                <label for="username">Enter the <span>OTP</span> code</label>
+                                                <input type="text" id="username">
+                                            </div>
                                         </div>
                                     </form>
                                 </div>
@@ -152,6 +175,18 @@
                     </div>
                 </li>
             </ul>
+            <div class="container center" style="margin-top: 00px; z-index: 10; margin-left: 330px;">
+                <div class="container">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col s6">
+                                <div class="prev btn btn-large pink lighten-2 white-text btn-floating"><i class="material-icons">arrow_back</i></div>
+                                <div class="next btn btn-large pink lighten-2 white-text btn-floating"><i class="material-icons">arrow_forward</i></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
     <script src="./js/jquery.js"></script>
@@ -160,9 +195,16 @@
     <script>
         $(document).ready(function(){
             $('.slider').slider({
-                height: 600,
+                height: 650,
                 interval: 40000,
+                indicators: false,
             });
+            $('.next').click(function(){
+                $('.slider').slider('next');
+            })
+            $('.prev').click(function(){
+                $('.slider').slider('prev');
+            })
         });
     </script>
     <script>

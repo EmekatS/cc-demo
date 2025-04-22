@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Campus Crush App</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Patrick+Hand&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        body{
+            font-family: "Patrick Hand";
+            overflow: hidden;
+            background-image: url(./images/whiteBg.jpg);
+        }
+        .bold-text{
+            font-weight: bold;
+        }
+        p{
+            color: gray;
+            font-size: 1.5rem;
+        }
+        .input-field input:focus{
+            border-bottom: 1px solid #f06292 !important;
+            box-shadow: 0 1px 0 0 #f06292 !important;
+        }
+        .input-field .prefix.active, label.active{
+            color: #f06292 !important;
+        }
+        .nav-links{
+            margin-top: 20px;
+            transition: all .4s;
+            border-radius: 50%;
+        }
+        .nav-links:hover{
+            transform: translateY(-40px);
+            background-color: #f06292;
+            height: 100px;
+        }
+        .curved{
+            border-radius: 20px;
+        }
+        span{
+            color: #f06292;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="navbar-fixed">
+            <nav class="white z-depth-0" style="height: 100px;">
+                <div class="container center">
+                    <a href="./index.html" class="brand-logo hide-on-med-and-down"><img src="./images/logo.png" alt="" style="max-width: 200px; margin-top: -55px; margin-left: -90px;"></a>
+                    <a href="./index.html" class="brand-logo hide-on-large-only"><img src="./images/logo.png" alt="" style="max-width: 200px; margin-top: -55px;"></a>
+                </div>
+            </nav>
+        </div>
+        <section style="height: calc(100vh - 130px);">
+            <div class="container">
+                <div class="row">
+                    <div class="col s12">
+                        <!-- <div class="card white" style="padding: 20px;">
+                            <div class="card-image">
+                                <img src="./images/interview1.jpeg" class="responsive-img">
+                            </div>
+                            <div class="card-content">
+                                <h3><span>Kelvin,</span> 23</h3>
+                                <p>Veritas University</p>
+                                <p style="font-size: 1.2rem;">Lorem ipsum dolor sit amet.</p>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="pink lighten-2" style="height: 100px;">
+            <div class="container center">
+                <div class="row">
+                    <div class="col s3" style="list-style: none;">
+                        <li class="nav-links"><a href="#" class="white-text"><i class="material-icons">person</i></a></li>
+                    </div>
+                    <div class="col s3" style="list-style: none;">
+                        <li class="nav-links"><a href="#" class="white-text"><i class="material-icons">mail</i></a></li>
+                    </div>
+                    <div class="col s3" style="list-style: none;">
+                        <li class="nav-links"><a href="#" class="white-text"><i class="material-icons">settings</i></a></li>
+                    </div>
+                    <div class="col s3" style="list-style: none;">
+                        <li class="nav-links"><a href="#" class="white-text"><i class="material-icons">home</i></a></li>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
+    <script src="./js/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.slider').slider({
+                height: 600,
+                interval: 400000,
+                indicators: false,
+            });
+        });
+    </script>
+    <script>
+        var authentication = new Typed('#auth', {
+            strings: ["E-Mail", "Username", "Phone Number", "..."],
+            typeSpeed : 100,
+            backSpeed : 50,
+            backDelay : 2000,
+            loop : true,
+        });
+      </script>
+</body>
+</html>
