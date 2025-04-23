@@ -52,9 +52,11 @@
                 </form>
                 <ul class="collection" style="height: 70px; background-color: gray;">
                     <li class="collection-item avatar">
-                        <img src="./images/interview9.jpeg" class="circle" >
-                        <span class="title">UserName</span>
-                        <p>Unniversity of Campus Crush</p>
+                        <a href="">
+                            <img src="./images/interview9.jpeg" class="circle" >
+                            <span class="title pink-text bold-text">UserName</span>
+                            <p>Unniversity of Campus Crush</p>
+                        </a>
                     </li>
                 </ul>
                 <div class="container">
@@ -68,7 +70,7 @@
                 </div>
                 <ul class="collection">
                     <div>
-                        <a href="#" class="collection-item pink-text bold-text">Starred Messages<i class="material-icons pink-text text-lighten-2 secondary-content">chevron_right</i></a>
+                        <a href="#starred-messages" class="collection-item pink-text text-lighten-2 bold-text modal-trigger">Starred Messages<i class="material-icons pink-text text-lighten-2 secondary-content">chevron_right</i></a>
                     </div>
                 </ul>
                 <div class="container">
@@ -81,13 +83,121 @@
                     </div>
                 </div>
                 <ul class="collection">
-                    <a href="#" class="collection-item pink-text bold-text">Account<i class="material-icons pink-text text-lighten-2 secondary-content">chevron_right</i></a>
-                    <a href="#" class="collection-item pink-text bold-text">Account<i class="material-icons pink-text text-lighten-2 secondary-content">chevron_right</i></a>
-                    <a href="#" class="collection-item pink-text bold-text">Account<i class="material-icons pink-text text-lighten-2 secondary-content">chevron_right</i></a>
+                    <a href="#acc-settings" class="collection-item pink-text text-lighten-2 bold-text modal-trigger">Account<i class="material-icons pink-text text-lighten-2 secondary-content">chevron_right</i></a>
+                    <a href="#send-link" class="collection-item pink-text text-lighten-2 bold-text modal-trigger">Invite a friend<i class="material-icons pink-text text-lighten-2 secondary-content">chevron_right</i></a>
+                    <a href="#dark-mode" class="collection-item pink-text text-lighten-2 bold-text modal-trigger">Dark Mode<i class="material-icons pink-text text-lighten-2 secondary-content">chevron_right</i></a>
                 </ul>
             </div>
         </section>
     </main>
+    <div class="modal bottom-sheet" id="acc-settings" style="background-image: url(./images/whiteBg.jpg);">
+        <div class="modal-content">
+            <div class="container">
+                <h4 class="bold-text center pink-text text-lighten-2">Account</h4>
+                <div class="row">
+                    <div class="col s12">
+                        <ul class="collection">
+                            <a href="#change-numb" class="collection-item pink-text text-lighten-2 bold-text modal-trigger">Change Phone Number<i class="material-icons pink-text text-lighten-2 secondary-content">chevron_right</i></a>
+                            <a href="#change-email" class="collection-item pink-text text-lighten-2 bold-text modal-trigger">Change Email<i class="material-icons pink-text text-lighten-2 secondary-content">chevron_right</i></a>
+                            <a href="#change-pass" class="collection-item pink-text text-lighten-2 bold-text modal-trigger">Change Password<i class="material-icons pink-text text-lighten-2 secondary-content">chevron_right</i></a>
+                            <a href="#del-acc" class="collection-item red-text bold-text modal-trigger">Delete Account<i class="material-icons red-text secondary-content">chevron_right</i></a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="change-numb">
+        <div class="modal-content">
+            <div class="container">
+                <h5 class="pink-text text-lighten-2 bold-text center">Change Number</h5>
+                <form action="">
+                    <div class="row">
+                        <div class="col s12 input-field">
+                            <label for="numb">New Number</label>
+                            <input type="tel" id="numb">
+                        </div>
+                        <div class="col s12 input-field">
+                            <button class="btn white-text pink lighten-2" style="width: 100%;">Change</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="change-email">
+        <div class="modal-content">
+            <div class="container">
+                <h5 class="pink-text text-lighten-2 bold-text center">Change Email</h5>
+                <form action="">
+                    <div class="row">
+                        <div class="col s12 input-field">
+                            <label for="mail">New Email</label>
+                            <input type="email" id="mail">
+                        </div>
+                        <div class="col s12 input-field">
+                            <button class="btn white-text pink lighten-2" style="width: 100%;">Change</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="change-pass">
+        <div class="modal-content">
+            <div class="container">
+                <h5 class="pink-text text-lighten-2 bold-text center">Change Password</h5>
+                <form action="">
+                    <div class="row">
+                        <div class="col s12 input-field">
+                            <label for="c-pass">Current Password</label>
+                            <input type="text" id="c-pass" data-length="10">
+                        </div>
+                        <div class="col s12 input-field">
+                            <label for="n-pass">New Password</label>
+                            <input type="password" id="n-pass">
+                        </div>
+                        <div class="col s12 input-field">
+                            <label for="c-n-pass">Confirm New Password</label>
+                            <input type="password" id="c-n-pass">
+                        </div>
+                        <div class="col s12 input-field">
+                            <button class="btn white-text pink lighten-2" style="width: 100%;">Change</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="del-acc">
+        <div class="modal-content">
+            <div class="container center">
+                <h5 class="red-text bold-text center">Delete Account</h5>
+                <button class="btn red white-text">Delete Acount</button>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="starred-messages">
+        <div class="modal-content">
+            <div class="container">
+                <h5 class="pink-text text-lighten-2 bold-text center">Starred Messages</h5>
+                <ul class="collection">
+                    <li class="collection-item avatar">
+                        <img src="./images/interview3.jpeg" class="circle" >
+                        <span class="title">David</span>
+                        <p>Yo bro i lovr babe...</p>
+                    </li>
+                </ul>
+                <ul class="collection">
+                    <li class="collection-item avatar">
+                        <img src="./images/interview8.jpeg" class="circle" >
+                        <span class="title">Tequilla</span>
+                        <p>Heyy i think your bro loves me...</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
     <script src="./js/jquery.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
@@ -98,6 +208,8 @@
                 interval: 400000,
                 indicators: false,
             });
+            $('.modal').modal();
+            $('input#input_text, textarea#textarea2').characterCounter();
         });
     </script>
     <script>
