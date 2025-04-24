@@ -34,25 +34,16 @@
         <header>
             <nav class="pink lighten-2" style="height: 70px;">
                 <div class="container">
-                    <button style="margin-bottom: -10px;" class="btn btn-large btn-floating white"><i class="material-icons pink-text text-lighten-2">arrow_back</i></button>
+                    <a href="./index.html" style="margin-bottom: -10px;" class="btn btn-large btn-floating white"><i class="material-icons pink-text text-lighten-2">arrow_back</i></a>
                     <h4 class="bold-text white-text" style="margin-top: -40px; margin-left: 70px;">Settings</h4>
                 </div>
             </nav>
         </header>
         <section class="section">
             <div class="container">
-                <form action="">
-                    <div class="row">
-                        <div class="col s12 input-field">
-                            <i class="material-icons prefix">search</i>
-                            <label for="search">Search</label>
-                            <input type="text" id="search">
-                        </div>
-                    </div>
-                </form>
                 <ul class="collection" style="height: 70px; background-color: gray;">
                     <li class="collection-item avatar">
-                        <a href="">
+                        <a href="#profile" class="modal-trigger">
                             <img src="./images/interview9.jpeg" class="circle" >
                             <span class="title pink-text bold-text">UserName</span>
                             <p>Unniversity of Campus Crush</p>
@@ -85,7 +76,7 @@
                 <ul class="collection">
                     <a href="#acc-settings" class="collection-item pink-text text-lighten-2 bold-text modal-trigger">Account<i class="material-icons pink-text text-lighten-2 secondary-content">chevron_right</i></a>
                     <a href="#send-link" class="collection-item pink-text text-lighten-2 bold-text modal-trigger">Invite a friend<i class="material-icons pink-text text-lighten-2 secondary-content">chevron_right</i></a>
-                    <a href="#dark-mode" class="collection-item pink-text text-lighten-2 bold-text modal-trigger">Dark Mode<i class="material-icons pink-text text-lighten-2 secondary-content">chevron_right</i></a>
+                    <a href="#" class="collection-item pink-text text-lighten-2 bold-text">Dark Mode <span class="secondary-content">s</span></a>
                 </ul>
             </div>
         </section>
@@ -104,6 +95,41 @@
                         </ul>
                     </div>
                 </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="profile">
+        <div class="modal-content">
+            <div class="container">
+                <h5 class="pink-text text-lighten-2 bold-text center">Profile</h5>
+                <form action="">
+                    <div class="row">
+                        <div class="col s12 input-field file-field center">
+                            <img src="./images/interview1.jpeg" style="max-width: 100px; border-radius: 50%;">
+                        </div>
+                        <div class="col s12 input-field file-field push-s3">
+                            <div class="btn pink-text text-lighten-2" style="background: none; border: none; box-shadow: none;">
+                                <span>Edit Photo</span>
+                                <input type="file">
+                            </div>
+                        </div>
+                        <div class="col s12 input-field">
+                            <label for="numb">UserName</label>
+                            <input type="tel" id="numb" value="UserName">
+                        </div>
+                        <div class="col s12 input-field">
+                            <label for="numb">University</label>
+                            <input type="tel" id="numb" value="University of Campus Crush">
+                        </div>
+                        <div class="col s12 input-field">
+                            <label for="numb">Bio</label>
+                            <input type="tel" id="numb" value="I am a Software Engineering Student">
+                        </div>
+                        <div class="col s12 input-field">
+                            <button class="btn white-text pink lighten-2" style="width: 100%;">Change</button>
+                        </div>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
@@ -140,6 +166,16 @@
                         </div>
                     </div>
                 </form>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="send-link">
+        <div class="modal-content">
+            <div class="container center">
+                <h5 class="pink-text text-lighten-2 bold-text center">Change Email</h5>
+                <div style="max-width: 300px; background-color: rgb(228, 228, 228); padding: 10px; overflow-y: hidden; height: 40px; overflow-x: scroll;">
+                    <a href="#" class="pink-text text-lighten-2" style="min-width: 300px;">loinkjsf-sdkfnkw-sdnfskjdnf</a>
+                </div>
             </div>
         </div>
     </div>
