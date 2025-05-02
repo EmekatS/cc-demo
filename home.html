@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Campus Crush App</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Patrick+Hand&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        body{
+            font-family: "Patrick Hand";
+            background-image: url(./images/whiteBg.jpg);
+        }
+        html, body, .block{
+            height: 100%;
+        }
+        .bold-text{
+            font-weight: bold;
+        }
+        p{
+            color: gray;
+            font-size: 1.5rem;
+        }
+        .input-field input:focus{
+            border-bottom: 1px solid #f06292 !important;
+            box-shadow: 0 1px 0 0 #f06292 !important;
+        }
+        .input-field .prefix.active, label.active{
+            color: #f06292 !important;
+        }
+        .nav-links{
+            margin-top: 20px;
+            transition: all .4s;
+            border-radius: 50%;
+        }
+        .nav-links:hover{
+            transform: translateY(-40px);
+            background-color: #f06292;
+            height: 100px;
+        }
+        .curved{
+            border-radius: 20px;
+        }
+        span{
+            color: #f06292;
+            font-weight: bold;
+        }
+        .card{
+            transition: all .4s;
+        }
+        .card:hover{
+            scale: 1.1;
+        }
+        .controller{
+            scroll-snap-type: y mandatory;
+        }
+        section{
+            height: 100vh;
+            scroll-snap-align: start;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <!-- <nav class="transparent z-depth-0" style="height: 100px;">
+            <div class="container center">
+                <a href="./index.html" class="brand-logo hide-on-med-and-down"><img src="./images/logo.png" alt="" style="max-width: 200px; margin-top: -55px"></a>
+                <a href="./index.html" class="brand-logo hide-on-large-only left"><img src="./images/logo.png" alt="" style="max-width: 200px; margin-top: -55px;"></a>
+            </div>
+        </nav> -->
+        <div class="controller">
+            <section class="pushpin-demo-nav">
+                <div class="container center">
+                    <div class="col s12" style="margin-top: 20px;">
+                        <div class="carousel">
+                            <a class="carousel-item" href="#one!"><img src="./images/interview1.jpeg"></a>
+                            <a class="carousel-item" href="#two!"><img src="./images/interview2.jpeg"></a>
+                            <a class="carousel-item" href="#three!"><img src="./images/interview3.jpeg"></a>
+                            <a class="carousel-item" href="#four!"><img src="./images/interview4.jpeg"></a>
+                            <a class="carousel-item" href="#five!"><img src="./images/interview5.jpeg"></a>
+                          </div>
+                    </div>
+                    <div class="col s12">
+                        <h1 class="bold-text"><span>Ashley, 19</span></h1>
+                        <h4>Veritas University Abuja</h4>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste consectetur tempora vero. Autem at quisquam nam placeat. Esse, sapiente doloremque.</p>
+                    </div>
+                    <div class="col s12">
+                        <button class="btn btn-large pink lighten-2 ">Add</button>
+                        <button class="btn btn-large red ">NOt Interested</button>
+                    </div>
+                </div>
+            </section>
+            <section class="pushpin-demo-nav">
+                <div class="container center">
+                    <div class="col s12" style="margin-top: 20px;">
+                        <div class="carousel">
+                            <a class="carousel-item" href="#one!"><img src="./images/interview6.jpeg"></a>
+                            <a class="carousel-item" href="#two!"><img src="./images/interview7.jpeg"></a>
+                            <a class="carousel-item" href="#three!"><img src="./images/interview8.jpeg"></a>
+                            <a class="carousel-item" href="#four!"><img src="./images/interview9.jpeg"></a>
+                            <a class="carousel-item" href="#five!"><img src="./images/interview1.jpeg"></a>
+                          </div>
+                    </div>
+                    <div class="col s12">
+                        <h1 class="bold-text"><span>Ashley, 19</span></h1>
+                        <h4>Veritas University Abuja</h4>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste consectetur tempora vero. Autem at quisquam nam placeat. Esse, sapiente doloremque.</p>
+                    </div>
+                    <div class="col s12">
+                        <button class="btn btn-large pink lighten-2 ">Add</button>
+                        <button class="btn btn-large red ">NOt Interested</button>
+                    </div>
+                </div>
+            </section>
+            <section class="pushpin-demo-nav">
+                <div class="container center">
+                    <div class="col s12" style="margin-top: 20px;">
+                        <div class="carousel">
+                            <a class="carousel-item" href="#one!"><img src="./images/interview9.jpeg"></a>
+                            <a class="carousel-item" href="#two!"><img src="./images/interview8.jpeg"></a>
+                            <a class="carousel-item" href="#three!"><img src="./images/interview7.jpeg"></a>
+                            <a class="carousel-item" href="#four!"><img src="./images/interview6.jpeg"></a>
+                            <a class="carousel-item" href="#five!"><img src="./images/interview5.jpeg"></a>
+                          </div>
+                    </div>
+                    <div class="col s12">
+                        <h1 class="bold-text"><span>Ashley, 19</span></h1>
+                        <h4>Veritas University Abuja</h4>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste consectetur tempora vero. Autem at quisquam nam placeat. Esse, sapiente doloremque.</p>
+                    </div>
+                    <div class="col s12">
+                        <button class="btn btn-large pink lighten-2 ">Add</button>
+                        <button class="btn btn-large red ">NOt Interested</button>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <script src="./js/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.carousel').carousel();
+            $('.slider').slider({
+                height: 600,
+                interval: 400000,
+                indicators: false,
+            });
+            $('.pushpin-demo-nav').each(function() {
+                var $this = $(this);
+                var $target = $('#' + $(this).attr('data-target'));
+                $this.pushpin({
+                  top: $target.offset().top,
+                  bottom: $target.offset().top + $target.outerHeight() - $this.height()
+              });
+            });
+            $('.sidenav').sidenav();
+            
+        });
+
+    </script>
+    <script>
+        var authentication = new Typed('#auth', {
+            strings: ["E-Mail", "Username", "Phone Number", "..."],
+            typeSpeed : 100,
+            backSpeed : 50,
+            backDelay : 2000,
+            loop : true,
+        });
+      </script>
+</body>
+</html>

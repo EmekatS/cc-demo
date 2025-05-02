@@ -44,6 +44,12 @@
             color: #f06292;
             font-weight: bold;
         }
+        .card{
+            transition: all .4s;
+        }
+        .card:hover{
+            scale: 1.1;
+        }
     </style>
 </head>
 <body>
@@ -59,39 +65,39 @@
         <section style="height: calc(100vh - 130px);">
             <div class="container">
                 <div class="row">
-                    <div class="col s12">
-                        <!-- <div class="card white" style="padding: 20px;">
-                            <div class="card-image">
-                                <img src="./images/interview1.jpeg" class="responsive-img">
+                    <div class="col l6 s12">
+                        <a href="./home.html">
+                            <div class="card white" style="padding: 20px;">
+                                <div class="card-content">
+                                    <h3><span>Home</span></h3>
+                                    <p>Experience our top of the line matchmaking system to meet new people all over the country</p>
+                                </div>
                             </div>
-                            <div class="card-content">
-                                <h3><span>Kelvin,</span> 23</h3>
-                                <p>Veritas University</p>
-                                <p style="font-size: 1.2rem;">Lorem ipsum dolor sit amet.</p>
+                        </a>
+                    </div>
+                    <div class="col l6 s12">
+                        <a href="./settings.html">
+                            <div class="card white" style="padding: 20px;">
+                                <div class="card-content">
+                                    <h3><span>Settigns</span></h3>
+                                    <p>Configure your experience to your taste and liking</p>
+                                </div>
                             </div>
-                        </div> -->
+                        </a>
+                    </div>
+                    <div class="col l6 s12">
+                        <a href="./inbox.html">
+                            <div class="card white" style="padding: 20px;">
+                                <div class="card-content">
+                                    <h3><span>Inbox</span></h3>
+                                    <p>Connect with your friends, contacts and family</p>
+                                </div>
+                            </div>
+                        </a>
                     </div>
                 </div>
             </div>
         </section>
-        <footer class="pink lighten-2" style="height: 100px; margin-top: -200px;">
-            <div class="container center">
-                <div class="row">
-                    <div class="col s3" style="list-style: none;">
-                        <li class="nav-links"><a href="./login.html" class="white-text"><i class="material-icons">person</i></a></li>
-                    </div>
-                    <div class="col s3" style="list-style: none;">
-                        <li class="nav-links"><a href="./inbox.html" class="white-text"><i class="material-icons">mail</i></a></li>
-                    </div>
-                    <div class="col s3" style="list-style: none;">
-                        <li class="nav-links"><a href="./settings.html" class="white-text"><i class="material-icons">settings</i></a></li>
-                    </div>
-                    <div class="col s3" style="list-style: none;">
-                        <li class="nav-links"><a href="./index.html" class="white-text"><i class="material-icons">home</i></a></li>
-                    </div>
-                </div>
-            </div>
-        </footer>
     </main>
     <script src="./js/jquery.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
