@@ -10,13 +10,16 @@
             padding: 0%;
             box-sizing: border-box;
         }
-        .controller{
-            scroll-snap-type: y mandatory;
-        }
-        section{
-            height: 100vh;
-            scroll-snap-align: always;
-        }
+        .controller {  
+            height: 100vh;  
+            overflow-y: scroll;
+            scroll-snap-type: y mandatory;   
+            scroll-behavior: smooth;  
+        }  
+        section {  
+            height: 100vh;  
+            scroll-snap-align: start;  
+        }  
     </style>
 </head>
 <body>

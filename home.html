@@ -53,7 +53,10 @@
             scale: 1.1;
         }
         .controller{
-            scroll-snap-type: y mandatory;
+            height: 100vh;  
+            overflow-y: scroll;
+            scroll-snap-type: y mandatory;   
+            scroll-behavior: smooth;  
         }
         section{
             height: 100vh;
@@ -63,12 +66,12 @@
 </head>
 <body>
     <main>
-        <!-- <nav class="transparent z-depth-0" style="height: 100px;">
-            <div class="container center">
-                <a href="./index.html" class="brand-logo hide-on-med-and-down"><img src="./images/logo.png" alt="" style="max-width: 200px; margin-top: -55px"></a>
-                <a href="./index.html" class="brand-logo hide-on-large-only left"><img src="./images/logo.png" alt="" style="max-width: 200px; margin-top: -55px;"></a>
+        <nav class="pink lighten-2" style="height: 70px;">
+            <div class="container">
+                <a href="./index.html" style="margin-bottom: -10px;" class="btn btn-large btn-floating white"><i class="material-icons pink-text text-lighten-2">arrow_back</i></a>
+                <h4 class="bold-text white-text" style="margin-top: -40px; margin-left: 70px;"></h4>
             </div>
-        </nav> -->
+        </nav>
         <div class="controller">
             <section class="pushpin-demo-nav">
                 <div class="container center">
@@ -82,7 +85,7 @@
                           </div>
                     </div>
                     <div class="col s12">
-                        <h1 class="bold-text"><span>Ashley, 19</span></h1>
+                        <h1 class="bold-text"><span>Ochigbo, 19</span></h1>
                         <h4>Veritas University Abuja</h4>
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste consectetur tempora vero. Autem at quisquam nam placeat. Esse, sapiente doloremque.</p>
                     </div>
@@ -104,8 +107,8 @@
                           </div>
                     </div>
                     <div class="col s12">
-                        <h1 class="bold-text"><span>Ashley, 19</span></h1>
-                        <h4>Veritas University Abuja</h4>
+                        <h1 class="bold-text"><span>Emma, 21</span></h1>
+                        <h4>Nile University Abuja</h4>
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste consectetur tempora vero. Autem at quisquam nam placeat. Esse, sapiente doloremque.</p>
                     </div>
                     <div class="col s12">
@@ -126,8 +129,8 @@
                           </div>
                     </div>
                     <div class="col s12">
-                        <h1 class="bold-text"><span>Ashley, 19</span></h1>
-                        <h4>Veritas University Abuja</h4>
+                        <h1 class="bold-text"><span>Uche, 16</span></h1>
+                        <h4>Baze University Abuja</h4>
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste consectetur tempora vero. Autem at quisquam nam placeat. Esse, sapiente doloremque.</p>
                     </div>
                     <div class="col s12">
@@ -144,6 +147,7 @@
     <script>
         $(document).ready(function(){
             $('.carousel').carousel();
+            $('.sidenav').sidenav();
             $('.slider').slider({
                 height: 600,
                 interval: 400000,
